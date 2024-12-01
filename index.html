@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALbum</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Bagian galeri foto -->
+      <section id="galeri">
+        <h1>💕💕</h1>
+        <div class="galeri-container">
+          <!-- Gambar-gambar dengan lazy loading untuk optimasi kinerja -->
+          <img src="assets/Foto 1.jpg" alt="Foto 1" loading="lazy" />
+          <img src="assets/Foto 2.jpg" alt="Foto 2" loading="lazy" />
+          <img src="assets/Foto 3.jpg" alt="Foto 3" loading="lazy" />
+          <img src="assets/Foto 4.jpg" alt="Foto 4" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal untuk menampilkan gambar yang diperbesar -->
+    <div id="imageModal" class="modal">
+      <img class="modal-content" id="modalImage" />
+      <button id="download-btn">Unduh</button>
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
