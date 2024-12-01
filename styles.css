@@ -64,6 +64,7 @@ h1 {
   cursor: pointer;
   display: block;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .galeri-container img:hover {
@@ -171,12 +172,27 @@ h1 {
 /* Tambahkan gaya berikut untuk video */
 .video-container {
   display: flex;
+  flex-direction: column; /* Susun video secara vertikal */
   justify-content: center; /* Pusatkan video secara horizontal */
   align-items: center; /* Pusatkan video secara vertikal */
-  height: 100vh; /* Tinggi penuh viewport */
+  height: auto; /* Tinggi otomatis untuk menyesuaikan konten */
+  overflow: hidden; /* Sembunyikan bagian video yang melampaui kontainer */
 }
 
 video {
   width: 100%; /* Lebar penuh */
   height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+  max-height: 100%; /* Batasi tinggi video agar tidak melebihi kontainer */
+  margin: 10px 0; /* Atur jarak antar video secara vertikal */
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .video-container {
+    padding: 1rem; /* Tambahkan padding untuk layar kecil */
+  }
+
+  video {
+    margin: 5px 0; /* Atur jarak antar video lebih kecil untuk layar kecil */
+  }
 }
