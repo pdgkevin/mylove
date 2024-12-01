@@ -167,3 +167,16 @@ h1 {
     max-height: 95%;
   }
 }
+
+/* Tambahkan gaya berikut untuk video */
+.video-container {
+  display: flex;
+  justify-content: center; /* Pusatkan video secara horizontal */
+  align-items: center; /* Pusatkan video secara vertikal */
+  height: 100vh; /* Tinggi penuh viewport */
+}
+
+video {
+  width: 100%; /* Lebar penuh */
+  height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+}
